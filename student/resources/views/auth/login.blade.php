@@ -16,6 +16,6 @@
         <br>
         <button type="submit">Login</button>
     </form>
-    <p>Don't have an account? <a href="{{ url('/register') }}">Register here</a></p>
+    <p>Don't have an account? <a href="{{ route('show.register') }}">Register here</a></p>
 </body>
 </html>

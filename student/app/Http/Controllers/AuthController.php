@@ -71,6 +71,8 @@ class AuthController extends Controller
         return redirect('/login')->with('success', 'Logged out successfully');
 
     }
+
+
     public function showProfile()
     {
         $student = session('student');
@@ -128,7 +130,7 @@ class AuthController extends Controller
         session()->forget('student');
         session()->flush();
 
-        return redirect('/register')->with('success', 'Account deleted successfully.');
+        return redirect('show.register')->with('success', 'Account deleted successfully.');
     }
 
 }
