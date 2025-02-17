@@ -2,10 +2,17 @@
 <html>
 <head>
     <title>Student Register</title>
+    <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.1/dist/js/adminlte.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.1/dist/css/adminlte.min.css">
 </head>
 <body>
     <h2>Register</h2>
     @if(session('error')) <p style="color:red;">{{ session('error') }}</p> @endif
+
+
+
+
+    <form>
     <form method="POST" action="{{ url('/register') }}">
         @csrf
         <label>Name:</label>
@@ -34,5 +41,6 @@
         <br>
         <button type="submit">Register</button>
     </form>
+</form>
 </body>
 </html>
