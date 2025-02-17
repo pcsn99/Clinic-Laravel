@@ -9,10 +9,6 @@
     <h2>Register</h2>
     @if(session('error')) <p style="color:red;">{{ session('error') }}</p> @endif
 
-
-
-
-    <form>
     <form method="POST" action="{{ url('/register') }}">
         @csrf
         <label>Name:</label>
@@ -41,6 +37,6 @@
         <br>
         <button type="submit">Register</button>
     </form>
-</form>
+
 </body>
 </html>
