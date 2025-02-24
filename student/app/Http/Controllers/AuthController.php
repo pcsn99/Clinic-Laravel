@@ -79,7 +79,7 @@ class AuthController extends Controller
         return view('auth.profile', ['student' => $student]);
     }
 
-    //go to edit
+    //go to edit profile page
     public function editProfile()
     {
         $student = session('student');
